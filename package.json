@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/merc1er/whitespace#readme",
   "devDependencies": {
+    "bootstrap": "^5.0.0-alpha2",
     "browser-sync": "^2.26.12",
-    "bootstrap": "^5.0.0-alpha1",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
