@@ -1,25 +1,24 @@
 {
-  "name": "whitespace",
+  "name": "gulp-skel",
   "version": "1.0.0",
-  "description": "Coworking space in Bordeaux website",
+  "description": "Template repository for Gulp projects",
   "main": "index.js",
   "scripts": {
     "test": "echo test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/merc1er/whitespace.git"
+    "url": "git+https://github.com/merc1er/gulp-skel.git"
   },
   "keywords": [
-    "Coworking",
-    "WhiteSpace"
+    "Gulp"
   ],
   "author": "Corentin Mercier",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/merc1er/whitespace/issues"
+    "url": "https://github.com/merc1er/gulp-skel/issues"
   },
-  "homepage": "https://github.com/merc1er/whitespace#readme",
+  "homepage": "https://github.com/merc1er/gulp-skel#readme",
   "devDependencies": {
     "bootstrap": "^5.0.0-alpha2",
     "browser-sync": "^2.26.12",
