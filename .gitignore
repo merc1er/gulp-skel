@@ -1,4 +1,14 @@
+# local env
 .DS_Store
+
+# node
 node_modules
+package-lock.json
+
+# dist
 dist/
+dist-lang/
+
+# compiled files
 README.html
+app/static/css/style.css
