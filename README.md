@@ -47,4 +47,3 @@ Hit `ctrl + C` to stop the server.
 
 Run `npx gulp build`. The `/dist/` folder contains the production website.
 
----
