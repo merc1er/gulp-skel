@@ -1,19 +1,19 @@
 // Imports
 
-const gulp = require('gulp'),
-    del = require('del'),
-    newer = require('gulp-newer'),
-    // CSS processing
-    sass = require('gulp-sass'),
-    cleanCSS = require('gulp-clean-css'),
-    // Templating
-    nunjucksRender = require('gulp-nunjucks-render'),
-    // JavaScript handling
-    concat = require('gulp-concat'),
-    terser = require('gulp-terser'),
-    // Development browser
-    browserSync = require('browser-sync'),
-    reload = browserSync.reload;
+const gulp        = require('gulp'),
+      del         = require('del'),
+      newer       = require('gulp-newer'),
+      // CSS processing
+      sass        = require('gulp-sass'),
+      cleanCSS    = require('gulp-clean-css'),
+      // Templating
+      nunjucks    = require('gulp-nunjucks-render'),
+      // JavaScript handling
+      concat      = require('gulp-concat'),
+      terser      = require('gulp-terser'),
+      // Development browser
+      browserSync = require('browser-sync'),
+      reload      = browserSync.reload;
 
 
 // TASKS
@@ -33,7 +33,7 @@ gulp.task('nunjucks', function() {
   // Gets all .html files in pages
   return gulp.src('app/**/*.html')
   // Renders template with nunjucks
-  .pipe(nunjucksRender({
+  .pipe(nunjucks({
     path: ['app/templates/']
   }))
   // Outputs files in dist folder
@@ -113,6 +113,8 @@ gulp.task('serve', function(done){
   done();
 });
 
+
+// Series
 
 // Default task
 gulp.task('default', gulp.series('clean', 'sass', 'nunjucks', 'js',
